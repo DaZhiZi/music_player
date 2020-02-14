@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MUSIC PLAYER</title>
+        <link rel="stylesheet" href="css/iconfont/iconfont.css">
+        <link rel="stylesheet" href="css/slider_style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style media="screen">
+            .backgroundImage {
+                background-image: url("cover/爱的飞行日记.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+        <style class="rotateStyle">
+        </style>
+    </head>
+    <body>
+        <div class="main-container" data-toggle="off" data-playing="false">
+
+            <section class="section-head">
+                <audio class="control-source" src="playlist/周杰伦 - .爱的飞行日记.mp3" data-style="orderPlay" data-path="Beth Hart - Bang Bang Boom Boom.mp3"></audio>
+                <div class="model-background backgroundImage rotate">
+                    <!-- <img class="vertical-center bgImg" src="cover/爱的飞行日记.jpg" alt="cover"> -->
+                </div>
+                <div class="control-button" data-toggle="off">
+                    <i class="control-button-play iconfont icon-play"></i>
+                    <i class="control-button-pause iconfont icon-zanting hide"></i>
+                </div>
+                <div class="control-button-style">
+                    <i class="control-button-loop sign iconfont icon-zhengchangfangxiangxunhuanbofang"></i>
+                    <i class="control-button-random iconfont icon-suijibofangzhongzuo"></i>
+                    <i class="control-button-single iconfont icon-danquxunhuan"></i>
+                </div>
+                <div class="model-control">
+                    <div class="control-detail">
+                        <span class="control-detail-song"> 爱的飞行日记 </span>
+                        <span class="control-detail-musician">- Jay Chou</span>
+                    </div>
+                    <div class="control-progress-bar">
+                        <span class="control-detail-currentTime">00:00</span>
+                        <div class="control-progress">
+                            <input class="control-progress-range" type="range" min="0" max="1000" step="1" value="0">
+                        </div>
+                        <span class="control-detail-duration">04:15</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-playlist">
+                <div class="cell-music" data-path="周杰伦 - .爱的飞行日记.mp3">
+                    <div class="model-cover-small">
+                        <img src="cover/爱的飞行日记.jpg" alt="cover">
+                    </div>
+                    <div class="model-music-detail vertical-center">
+                        <p class="detail-song">爱的飞行日记</p>
+                        <p class="detail-musician">Jay Chou</p>
+                        <p class="detail-duration">04:15</p>
+                    </div>
+                </div>
+
+                <div class="cell-music" data-path="周杰伦 - .龙卷风 (Live).mp3">
+                        <div class="model-cover-small">
+                            <img src="cover/龙卷风 (Live).jpg" alt="cover">
+                        </div>
+                        <div class="model-music-detail vertical-center">
+                            <p class="detail-song">龙卷风 (Live)</p>
+                            <p class="detail-musician">Jay Chou</p>
+                            <p class="detail-duration">04:04</p>
+                        </div>
+                 </div>
+                <div class="cell-music" data-path="周杰伦 - .简单爱.mp3">
+                    <div class="model-cover-small">
+                        <img src="cover/简单爱.jpg" alt="cover">
+                    </div>
+                    <div class="model-music-detail vertical-center">
+                        <p class="detail-song">简单爱</p>
+                        <p class="detail-musician">Jay Chou</p>
+                        <p class="detail-duration">04:30</p>
+                    </div>
+                </div>
+                <div class="cell-music" data-path="周杰伦 - .听妈妈的话.mp3">
+                    <div class="model-cover-small">
+                        <img src="cover/听妈妈的话.jpg" alt="cover">
+                    </div>
+                    <div class="model-music-detail vertical-center">
+                        <p class="detail-song">听妈妈的话</p>
+                        <p class="detail-musician">Jay Chou</p>
+                        <p class="detail-duration">04:25</p>
+                    </div>
+                </div>
+                <div class="cell-music" data-path="周杰伦 - .我要夏天.mp3">
+                        <div class="model-cover-small">
+                            <img src="cover/我要夏天.jpg" alt="cover">
+                        </div>
+                        <div class="model-music-detail vertical-center">
+                            <p class="detail-song">我要夏天</p>
+                            <p class="detail-musician">Jay Chou</p>
+                            <p class="detail-duration">03:39</p>
+                        </div>
+                </div>
+            </section>
+            <div class="control-button-select">
+                <i class="control-button-prev iconfont icon-icon120"></i>
+                <i class="control-button-next iconfont icon-icon121"></i>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

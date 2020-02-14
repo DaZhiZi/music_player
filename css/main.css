@@ -1,0 +1,256 @@
+.main-container {
+    position: relative;
+    width: 375px;
+    height: 560px;
+    background: #2f2f2f;
+    overflow: hidden;
+    cursor: default;
+    margin: 100px auto;
+    box-shadow: 5px 5px 25px #232323;
+}
+
+/*播放器头部*/
+.section-head {
+    position: relative;
+    color:white;
+    height: 350px;
+    transition: all 1s;
+}
+.section-head-2 {
+    position: relative;
+    color:white;
+    height: 560px;
+}
+.model-background {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.model-background-2 {
+    top: 115px;
+    left: 77.5px;
+    width: 220px;
+    height: 220px;
+    box-shadow: 0 0 0 35px #232323;
+    border-radius: 110px;
+    z-index: 8;
+}
+.model-control {
+    position: absolute;
+    bottom: 0px;
+    height: 42px;
+    padding: 5px 20px;
+    background-color: rgba(60, 60, 60, 0.3);
+    transition: all 1s;
+}
+.model-control-2 {
+    height: 100%;
+    bottom: 0px;
+    padding: 0px;
+    background: none;
+}
+.control-button {
+    position: absolute;
+    top: 322px;
+    right: 16px;
+    width: 50px;
+    height: 55px;
+    z-index: 10;
+    transition: all 1s;
+}
+.control-button-2 {
+    top: 465px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.control-button-play,
+.control-button-pause {
+    font-size: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transition: opacity 0.5s;
+}
+.control-button-style {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 9;
+    transition: all 1s;
+}
+.control-button-style-2 {
+    bottom: 120px;
+    opacity: 1;
+}
+.control-button-random,
+.control-button-loop,
+.control-button-single {
+    font-size: 20px;
+    margin: 0px 10px;
+    color: #818181;
+}
+.control-button-select {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    height: 0px;
+    transition: all 1s;
+}
+.control-button-select-2 {
+    bottom: 60px;
+    height: 20px;
+}
+.control-button-prev,
+.control-button-next {
+    margin: 0px 80px;
+    font-size: 24px;
+}
+.control-button-prev:hover,
+.control-button-next:hover {
+    color: #818181;
+}
+.control-detail {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    transition: all 1s;
+}
+.control-detail-2 {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 40px;
+}
+.control-progress-bar {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
+}
+.control-progress-bar-2 {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 355px;
+}
+.control-detail-song {
+    font-weight: bolder;
+    color: white;
+}
+.control-detail-musician {
+    color: #c7c7c7;
+}
+.control-detail-song-2,
+.control-detail-musician-2 {
+    font-size: 16px;
+    color: white;
+}
+.control-detail-currentTime {
+    font-size: 12px;
+    color: white;
+}
+.control-progress {
+    display: inline-block;
+    width: 160px;
+    position: relative;
+    top: -3px;
+}
+.control-detail-duration {
+    font-size: 12px;
+    color: white;
+}
+
+
+/*播放列表*/
+.section-playlist {
+    height: 210px;
+    position: relative;
+    top: 0px;
+    opacity: 1s;
+    overflow: auto;
+    transition: all 1s;
+}
+.section-playlist-2 {
+    height: 0px;
+    top: 0px;
+    opacity: 0;
+    overflow: auto;
+}
+.section-playlist::-webkit-scrollbar {
+    display: none;
+}
+.cell-music {
+    padding: 10px 20px;
+    height: 50px;
+    cursor: default;
+    transition: background 0.5s;
+}
+.cell-music:hover {
+    background: #252525;
+}
+.model-cover-small {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.model-cover-small img {
+    width: 100%;
+}
+.model-music-detail {
+    padding-left: 70px;
+}
+.detail-song {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #d0d0d0;
+    margin: 0px;
+}
+.detail-musician {
+    display: inline-block;
+    font-size: 14px;
+    color: #7d7d7d;
+    margin: 10px 0px 0px 0px;
+}
+.detail-duration {
+    float: right;
+    font-size: 14px;
+    color: #7d7d7d;
+    margin: 10px 0px 0px 0px;
+}
+
+/*通用部分*/
+.vertical-center {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+.hide {
+    opacity: 0;
+    z-index: -1;
+}
+.sign {
+    color: white;
+}
+
+/*旋转效果*/
+@-webkit-keyframes rotate{
+    from{-webkit-transform:rotate(0deg)}
+    to{-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes rotate{
+    from{-moz-transform:rotate(0deg)}
+    to{-moz-transform:rotate(360deg)}
+}
+@-ms-keyframes rotate{
+    from{-ms-transform:rotate(0deg)}
+    to{-ms-transform:rotate(360deg)}
+}
+@-o-keyframes rotate{
+    from{-o-transform:rotate(0deg)}
+    to{-o-transform:rotate(360deg)}
+}
